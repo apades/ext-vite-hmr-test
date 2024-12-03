@@ -1,19 +1,19 @@
+import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import { port, r } from './utils'
 
-export default defineConfig(({ command }) => {
+export default defineConfig(() => {
   return {
+    plugins: [
+      react() as any,
+    ],
     resolve: {
       alias: {
         '@root': r('src'),
       },
     },
-    base: command === 'serve' ? `http://localhost:${port}/` : '/dist/',
     server: {
       port,
-      hmr: {
-        host: 'localhost',
-      },
     },
   }
 })

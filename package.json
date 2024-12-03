@@ -1,0 +1,20 @@
+{
+  "name": "ext-vite-hmr-test",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --config scripts/vite.content.ts"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.11.2",
+    "@types/chrome": "^0.0.287",
+    "@types/node": "^22.10.1",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.2"
+  }
+}

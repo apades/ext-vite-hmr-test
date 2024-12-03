@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "description": "test",
+  "author": "apades",
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

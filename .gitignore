@@ -1,0 +1,9 @@
+.idea
+dist
+node_modules
+
+debug.log
+.DS_Store
+
+lib
+.turbo
